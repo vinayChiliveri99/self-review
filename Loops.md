@@ -90,7 +90,40 @@ output -
 
 In the above example we used forEach to modify the original array itself.
 
+## 3. for .. in
+
+The for .. in loop in JavaScript is used to loop on objects.
+By using this loop, we can access the key, value pairs in an object.
+
+Syntax :
+
+```js
+for(key in object) {
+    // inner blocks for execution.
+}
+```
+`Sample Code : `
+
+```js
+let car = {
+    model : 'audi x4',
+    car_make : 'audi',
+    make_year : 2015,
+    price : 100000000
+};
+
+// now to iterate over this data we can use for in loop.
+
+for(key in car) {
+    console.log(key + ' is ' + car[key]);
+}
 
 
-
+Output - 
+model is audi x4
+car_make is audi
+make_year is 2015
+price is 100000000
+```
+In this way we can access both key and value pairs from the object using **for .. in** loop
 
